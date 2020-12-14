@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.spiridonova.secondapp"
+        applicationId "com.spiridonova.kotlin108"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

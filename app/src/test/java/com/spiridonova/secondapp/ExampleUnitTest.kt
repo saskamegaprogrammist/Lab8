@@ -1,4 +1,4 @@
-package com.spiridonova.secondapp
+package com.spiridonova.kotlin108
 
 import org.junit.Test
 
