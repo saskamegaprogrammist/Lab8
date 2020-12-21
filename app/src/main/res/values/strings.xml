@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kotlin108</string>
+    <string name="file_name">filename</string>
+    <string name="refresh_button">reload</string>
+    <string name="enter_text">enter text</string>
+    <string name="enter_filename">enter filename</string>
+    <string name="save_private">save private</string>
+    <string name="save_public">save public</string>
+    <string name="go_up">go up</string>
+
 </resources>

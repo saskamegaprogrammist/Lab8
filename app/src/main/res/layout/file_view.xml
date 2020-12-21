@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standart_padding"
+                    android:text="@string/file_name"
+                    android:id="@+id/file_name"
+                    android:textAppearance="@style/TextAppearance.Kotlin108.Body1"
+
+                    />
+                    <ImageButton
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/delete_file_button"
+                        android:layout_marginEnd="@dimen/card_margin"
+                        android:src="@drawable/ic_create_black_18dp"
+                        android:id="@+id/edit_file_button"
+                        style="?attr/borderlessButtonStyle"
+                        />
+
+                    <ImageButton
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/card_margin"
+                        android:src="@drawable/ic_delete_outline_black_18dp"
+                        android:id="@+id/delete_file_button"
+                        style="?attr/borderlessButtonStyle"
+                        />
+
+            </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

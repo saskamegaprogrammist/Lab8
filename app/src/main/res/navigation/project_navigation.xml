@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/project_navigation"
+    app:startDestination="@+id/navigation_start">
+
+    <fragment
+        android:id="@+id/navigation_start"
+        android:name="com.spiridonova.kotlin108.fileslist.FilesListFragment"
+        android:label="Files info list"
+        tools:layout="@layout/files_list_fragment" >
+        <action
+            android:id="@+id/to_file_edit"
+            app:destination="@id/navigation_file_edit"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/navigation_file_edit" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_file_edit"
+        android:name="com.spiridonova.kotlin108.FileEditFragment"
+        android:label="File edit"
+        tools:layout="@layout/file_edit_fragment" >
+        <action
+            android:id="@+id/to_start"
+            app:popUpTo="@+id/navigation_start">
+        </action>
+
+    </fragment>
+
+</navigation>
